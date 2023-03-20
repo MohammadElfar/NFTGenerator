@@ -1,0 +1,82 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        background: url(resources/body-bg.png),linear-gradient(0deg, rgba(0,0,0,1) 9%, rgba(0,0,0,0) 100%);
+        background-color: black;
+        background-position: top left;
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow-x: hidden;
+    
+}
+@font-face {
+    font-family: Gilroy;
+    src: url("fonts/Gilroy-ExtraBold.otf");
+    font-weight: bold;
+  }
+@font-face {
+    font-family: GilroyLight;
+    src: url("fonts/Gilroy-Light.otf");
+    font-weight: normal;
+  }
+  .cairo{
+    font-family: 'Cairo', sans-serif;
+    font-weight: 500;
+  }
+  .cairolight{
+    font-family: 'Cairo', sans-serif;
+    font-weight: 300;
+  }
+
+  
+.hero-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    
+}
+.rtl{
+    direction: rtl;
+}
+.gilroylight{
+    font-family: GilroyLight;
+}
+.gilroybold{
+    font-family: Gilroy;
+}
+
+
+
+/* Big Screens View - Use of VH and VW */
+@media screen and (min-width:1700px) {
+    html {
+        font-size: 70%;
+    }
+    .ma-container{
+        max-width: 85%;
+    }
+}
+
+/* Tablet View */
+@media screen and (max-width:768px) {
+    body{
+        background: url(resources/body-bg-mobile.png),linear-gradient(0deg, rgba(0,0,0,1) 9%, rgba(0,0,0,0) 100%);
+        background-size: contain;
+    }
+}
+
+/* Mobile View */
+@media screen and (max-width:576px) {
+    html {
+        font-size: 55%;
+    }
+}
